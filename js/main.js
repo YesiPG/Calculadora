@@ -17,7 +17,7 @@
 
       }
 
-      if(e.textContent == "+" || e.textContent == "-" || e.textContent == "*" || e.textContent == "/" || e.textContent == "%"){
+      if(e.textContent == "+" || e.textContent == "-" || e.textContent == "*" || e.textContent == "/" || e.textContent == "%" || e.textContent == "."){
         datosVer.value += e.textContent;
         num += e.textContent;
       }
@@ -32,6 +32,10 @@
         datosVer.value = "";
         num = 0;
       }
+
+      // if(e.textContent == "borrar"){
+      //   datosVer.value = num.replace(/.$/,"");
+      // }
 
     });
 
